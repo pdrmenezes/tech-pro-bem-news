@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tech Pro Bem News
 
-## Getting Started
+Tech Pro Bem News é um projeto criado como desafio técnico para contribuir como pessoa desenvolvedora voluntária na chamada aberta em junho/2024.
 
-First, run the development server:
+## Tecnologias
+O desafio foi realizado em 4 horas utilizando:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js
+- Tailwind CSS
+- Typescript
+- Bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos
+Algumas regras deveriam ser respeitadas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Configurar um projeto Next.js
+2. Criar uma página inicial que exiba cards das notícias da API pública. Os cards podem conter:
+   - Título da notícia [Obrigatório]
+   - Fragmento da notícia [Opcional]
+   - Uma imagem ilustrativa da notícia [Opcional]
+   - Autor [Opcional]
+   - Data da Publicação [Opcional]
+3. Cada card, ao ser clicado, deve redirecionar o usuário para uma página de detalhes para exibir as informações completas de uma notícia específica. Páginas de detalhes podem conter:
+   - Título [Obrigatório]
+   - Texto da notícia [Obrigatório]
+   - Data de publicação [Opcional]
+   - Autor [Opcional]
+4. Configurar uma API do Next.js para lidar com as requisições do backend.
+5. Garantir que o código esteja versionado em um repositório Git e fazer commits regulares e semânticos ao longo do desenvolvimento.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Preview
 
-## Learn More
+### Hero Section
 
-To learn more about Next.js, take a look at the following resources:
+![](https://github.com/pdrmenezes/tech-pro-bem-news/blob/main/public/ss-1.webp)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Featured Article
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![](https://github.com/pdrmenezes/tech-pro-bem-news/blob/main/public/ss-2.webp)
 
-## Deploy on Vercel
+### Article Feed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![](https://github.com/pdrmenezes/tech-pro-bem-news/blob/main/public/ss-3.webp)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Article Page
+
+![](https://github.com/pdrmenezes/tech-pro-bem-news/blob/main/public/ss-4.webp)
