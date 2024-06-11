@@ -34,6 +34,7 @@ Para exercitar algumas habilidades e por me divertir, adicionei também:
 - Aplicação responsiva.
 - Cache de 1 hora para chamadas à API para evitar abuso de API pública e gratuita.
 - Aplicação hospedada gratuitamente na Vercel.
+- Baseado no [comentário do icyJoseph](https://github.com/vercel/next.js/discussions/48793#discussioncomment-5715951) Criei o projeto com os requisitos exigidos e refatorei com as otimizações propostas
 
 
 ## Preview
@@ -55,7 +56,7 @@ Para exercitar algumas habilidades e por me divertir, adicionei também:
 ![](https://github.com/pdrmenezes/tech-pro-bem-news/blob/main/public/ss-4.webp)
 
 ## Possíveis Melhorias
-- Simplificar chamadas fetch para que aconteçam em 1 só lugar (ou dentro do componente diretamente ou criando funções para melhor organizar o código da API).
+- Simplificar chamadas fetch para evitar a ineficiência de dar um passo a mais na internet e de volta para o backend da aplicação. Preferivelmente chamaria diretamenta a API externa ou criaria funções para ajudar a lidar com erros e status de carregamento.
 - Implementar paginação ou rolagem infinita.
 - Implementar toas com possíveis mensagens de erro da API.
 - Implementar Suspense em mais componentes para aguardar recebimento de dados da API sem interromper o carregamento da página.
