@@ -2,7 +2,7 @@
 
 <b>Tech Pro Bem News</b> é um projeto criado como desafio técnico para contribuir como pessoa desenvolvedora voluntária na chamada aberta em junho/2024.
 
-🚀 [Deployed project](https://tech-pro-bem-news-efnk494f8-pdrmenezes-projects.vercel.app/)
+🚀 [Deployed project](https://tech-pro-bem-news.vercel.app/)
 
 ## Tecnologias
 
