@@ -7,8 +7,8 @@ export function ArticleCard(props: ArticleProps) {
       <div className="overflow-hidden">
         <img
           className="transform duration-500 rounded-sm group-hover:opacity-50 aspect-video"
-          src={props.image_url}
-          alt={props.title}
+          src={props.image_url || ""}
+          alt={props.title || ""}
         />
       </div>
       <div className="p-4 absolute bg-gray-200 rounded-full top-10 right-10 transform duration-500 opacity-0 group-hover:opacity-100">

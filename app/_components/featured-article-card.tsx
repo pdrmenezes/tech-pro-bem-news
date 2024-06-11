@@ -4,7 +4,11 @@ import { type ArticleProps } from "../_types/Articles";
 export function FeaturedArticleCard(props: ArticleProps) {
   return (
     <div className="relative px-10 md:p-0 transform duration-500 rounded-md overflow-hidden hover:-translate-y-1 ">
-      <img className="xl:max-w-6xl" src={props.image_url} alt={props.title} />
+      <img
+        className="xl:max-w-6xl"
+        src={props.image_url || ""}
+        alt={props.title || ""}
+      />
       <div className="bg-white p-4 pt-8 md:p-12 pb-12 lg:max-w-lg w-full rounded-md lg:absolute top-44 right-5">
         <div className="flex justify-between font-bold text-sm">
           <p className="text-neutral-900">{props.news_site}</p>

@@ -1,17 +1,11 @@
 export type APIGetArticlesResponse = {
-  data: {
-    count: number;
-    next: string;
-    previous: string;
-    results: APIArticleResponse[];
-  };
+  count: number;
+  next: string;
+  previous: string;
+  results: APIArticleByIdResponse[];
 };
 
 export type APIArticleByIdResponse = {
-  data: APIArticleResponse;
-};
-
-export type APIArticleResponse = {
   id: number;
   title: string;
   url: string;
@@ -37,7 +31,7 @@ export type APIArticleResponse = {
 
 export type ArticleProps = Partial<
   Pick<
-    APIArticleResponse,
+    APIArticleByIdResponse,
     | "id"
     | "title"
     | "url"
@@ -48,3 +42,8 @@ export type ArticleProps = Partial<
     | "featured"
   >
 >;
+
+export type GetArticlesProps = {
+  limit?: number | undefined;
+  offset?: number | undefined;
+};

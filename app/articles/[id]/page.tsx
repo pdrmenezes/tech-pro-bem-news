@@ -1,22 +1,21 @@
-import { type APIArticleByIdResponse } from "@/app/_types/Articles";
+import { getArticleById } from "@/app/_lib/articles";
 import { Suspense } from "react";
 
 export default async function ArticlePage({
   params,
 }: {
-  params: { id: string };
+  params: { id: number };
 }) {
-  const response = await fetch(
-    `http://localhost:3000/api/articles/${params.id}`
-  );
-  const { data: article }: Awaited<APIArticleByIdResponse> =
-    await response.json();
+
+  const id = params.id;
+  const article = await getArticleById({ id });
 
   return (
     <div className="px: max-w-prose mx-auto mt-10 pt-4 pb-10">
       <Suspense fallback="Loading...">
         <img
           src={article.image_url}
+          alt={article.title}
           className="max-w-6xl w-full h-auto rounded-md"
         />
         <h2 className="my-4 text-3xl font-bold text-neutral-200">

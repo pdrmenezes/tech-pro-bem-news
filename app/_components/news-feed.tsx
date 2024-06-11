@@ -1,4 +1,4 @@
-import { APIGetArticlesResponse } from "../_types/Articles";
+import { getArticles } from "../_lib/articles";
 import { ArticleCard } from "./article-card";
 import { FeaturedArticleCard } from "./featured-article-card";
 
@@ -9,11 +9,8 @@ export async function NewsFeed({
   limit?: number;
   offset?: number;
 }) {
-  const response = await fetch(
-    `http://localhost:3000/api/articles?limit=${limit}&offset=${offset}`
-  );
-  const { data: articlesData }: Awaited<APIGetArticlesResponse> =
-    await response.json();
+  
+  const articlesData = await getArticles({ limit, offset });
 
   const featuredArticle = articlesData.results[0];
   const articles = articlesData.results.slice(1);
